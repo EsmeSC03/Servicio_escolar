@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Convocatoria</title>
+</head>
+<body>
+  <h1>Convocatoria para el puesto de programador</h1>
+  <p>Se busca un programador con experiencia en HTML, CSS y JavaScript para unirse a nuestro equipo. </p>
+  <h2>Requisitos</h2>
+  <ul>
+    <li>Experiencia mínima de 2 años en desarrollo web</li>
+    <li>Conocimientos avanzados en HTML, CSS y JavaScript</li>
+    <li>Capacidad para trabajar en equipo y bajo presión</li>
+  </ul>
+  <h2>Responsabilidades</h2>
+  <ul>
+    <li>Desarrollar y mantener sitios web</li>
+    <li>Trabajar en colaboración con diseñadores y otros desarrolladores</li>
+    <li>Realizar pruebas de calidad y asegurar el correcto funcionamiento de los sitios</li>
+  </ul>
+  <h2>Cómo aplicar</h2>
+  <p>Los interesados deben enviar su CV y portafolio de proyectos a la dirección de correo electrónico <a href="mailto:jobs@empresa.com">jobs@empresa.com</a></p>
+</body>
+</html>

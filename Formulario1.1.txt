@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario de Convocatoria de Servicio Social</title>
+</head>
+<body>
+  <h1>Formulario de Convocatoria de Servicio Social</h1>
+  <form action="#" method="POST">
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" name="correo" required><br><br>
+
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" required><br><br>
+
+    <label for="universidad">Universidad:</label>
+    <input type="text" id="universidad" name="universidad" required><br><br>
+
+    <label for="carrera">Carrera:</label>
+    <input type="text" id="carrera" name="carrera" required><br><br>
+
+    <label for="semestre">Semestre:</label>
+    <input type="number" id="semestre" name="semestre" min="1" max="10" required><br><br>
+
+    <label for="carta">Carta de presentación:</label>
+    <input type="file" id="carta" name="carta" accept=".pdf" required><br><br>
+
+    <button type="submit">Enviar solicitud</button>
+  </form>
+</body>
+</html>
