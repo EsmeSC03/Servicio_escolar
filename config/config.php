@@ -1,6 +1,6 @@
 <?php
 
-define('URL', 'http://localhost/expense-app-master/');
+define('URL', 'http://localhost/servicio/');
 
 define('HOST', 'localhost');
 define('DB', 'servicio_escolar');

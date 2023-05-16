@@ -1,14 +1,28 @@
 <?php
-error_reporting(E_ALL); // Error/Exception engine, always use E_ALL
+// El siguiente bloque de codigo sirve para hacer test en el proyecto
 
-ini_set('ignore_repeated_errors', TRUE); // always use TRUE
-
-ini_set('display_errors', FALSE); // Error/Exception display, use FALSE only in production environment or real server. Use TRUE in development environment
-
-ini_set('log_errors', TRUE); // Error/Exception file logging engine.
-
-ini_set("error_log", "/var/www/html/expense-app/php-error.log");
-error_log( "Hello, errors!" );
+// phpinfo();
+# El directorio o carpeta en donde se van a crear los logs
+define("RUTA_LOGS", __DIR__ . "/logs");
+# Crear carpeta si no existe
+if (!file_exists(RUTA_LOGS)) {
+    mkdir(RUTA_LOGS);
+}
+# Poner fecha y hora de México, esto es por si el servidor tiene
+# otra zona horaria
+date_default_timezone_set("America/Mexico_City");
+error_reporting(E_ALL);
+ini_set('ignore_repeated_errors', TRUE);
+# Configuramos el ini para que No muestre errores
+// ini_set('display_errors', 0);
+ini_set('display_errors', FALSE);
+# Los ponga en un archivo
+// ini_set("log_errors", 1);
+ini_set('log_errors', TRUE);
+# Y le indicamos en dónde los va a poner, sería en algo como:
+# RUTA_LOGS/2022-02-07.log
+# Así cada día tenemos un archivo de log distinto
+ini_set("error_log", RUTA_LOGS . "/" . date("Y-m-d") . ".log");
 
 //tail -f /tmp/php-error.log
 require_once 'libs/database.php';
